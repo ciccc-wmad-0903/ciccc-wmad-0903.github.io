@@ -1,0 +1,54 @@
+.btn1 {
+    background-color: aqua;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0%;
+}
+
+.btn2 {
+    background-color: aqua;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -1%;
+}
+
+.txt1 {
+    background-color: aqua;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin-left: 5px; 
+    
+}
+
+p {
+    margin-bottom: -20px;
+}
+
+#result {
+    font-size: 4em;
+    font-weight: bold;
+    
+}
+
+.txt2 {
+    background-color: aqua;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+.rst {
+    width: 300px;
+    height: 300px;
+}
