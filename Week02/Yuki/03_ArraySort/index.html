@@ -9,32 +9,28 @@
 
 <style>
     div{
-        height: 10px;
         background-color: black;
         padding: 5px;
-    }
-    .box1{
-        height: 30px;
-        border: 3px solid black;
-        padding: 5px;
         color: white;
+        border: 3px solid rgb(96, 182, 96);
     }
+    
 </style>
 <body>
     <div>
         <button id="reverse" onclick="reverse()">Sort Twice</button>    
-    </div>
-
-    <div class="box1">
         <div id="output"></div>
     </div>
 
+    
+        
+    
     <script>
 
         var fruits = [ "Durian", "Figs", "Blackberries", "Elderberries", "Apricots", "Cherry", "Graopefruit"];
 
-        fruits.sort();
         document.getElementById("output").innerHTML = fruits;
+        fruits.sort();
 
         function reverse() {
             fruits.reverse();
