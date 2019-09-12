@@ -6,9 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Array Sort</title>
 </head>
+
+<style>
+    div{
+        height: 10px;
+        background-color: black;
+        padding: 5px;
+    }
+    .box1{
+        height: 30px;
+        border: 3px solid black;
+        padding: 5px;
+        color: white;
+    }
+</style>
 <body>
     <div>
-        <button id="reverse" onclick="reverse()">Sort Twice</button>
+        <button id="reverse" onclick="reverse()">Sort Twice</button>    
+    </div>
+
+    <div class="box1">
         <div id="output"></div>
     </div>
 
@@ -19,10 +36,10 @@
         fruits.sort();
         document.getElementById("output").innerHTML = fruits;
 
-    function reverse() {
-        fruits.reverse();
-        document.getElementById("output").innerHTML = fruits;
-    }
+        function reverse() {
+            fruits.reverse();
+            document.getElementById("output").innerHTML = fruits;
+        }
 
         document.getElementById("reverse").addEventListener("click", div);
     
