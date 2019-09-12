@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" type="text/css" href="app.css">
-
-    <title>Document</title>
+    <title>Array Sort</title>
 </head>
 <body>
+    <div>
+        <button id="reverse" onclick="reverse()">Sort Twice</button>
+        <div id="output"></div>
+    </div>
 
-    <script type="text/javascript" src="app.js"></script>
+    <script>
+
+        var fruits = [ "Durian", "Figs", "Blackberries", "Elderberries", "Apricots", "Cherry", "Graopefruit"];
+
+        fruits.sort();
+        document.getElementById("output").innerHTML = fruits;
+
+    function reverse() {
+        fruits.reverse();
+        document.getElementById("output").innerHTML = fruits;
+    }
+
+        document.getElementById("reverse").addEventListener("click", div);
+    
+    </script>
 </body>
 </html>
