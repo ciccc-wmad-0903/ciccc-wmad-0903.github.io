@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="app.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/github.css">
 
-    <title>[Code] 4. Creating multiplication table</title>
+    <title>[Code] 5. Factorial of N number</title>
 </head>
 <body>
     <a href="../../index.html">&lt; Back to Menu</a>
@@ -28,16 +28,10 @@
 
     &lt;link rel="stylesheet" type="text/css" href="app.css">
 
-    &lt;title>4. Creating multiplication table&lt;/title>
+    &lt;title>5. Factorial of N number&lt;/title>
 &lt;/head>
 &lt;body>
-    &lt;label for="number">Number: &lt;/label>
-    &lt;input type="number" id="number">
-    &lt;button onclick="generateTable()">Generate Table&lt;/button>
     &lt;h1 id="output">&lt;/h1>
-
-    &lt;button onclick="generateAllTable()">Generate All Table&lt;/button>
-    &lt;h2 id="outputAll">&lt;/h2>
 
     &lt;script type="text/javascript" src="app.js">&lt;/script>
 &lt;/body>
@@ -50,28 +44,22 @@
         <figcaption>JavaScript</figcaption>
         <pre>
             <code data-language="javascript">              
-function generateTable() {
-    var htmlText = getNumberTableText(document.getElementById("number").value);
-    document.getElementById("output").innerHTML = htmlText;    
-}
+var number = Number(prompt("Integer Number? "));
 
-function generateAllTable() {
-    var htmlText = "";
-    for (var i = 1; i &lt;= 10; ++i) {
-        htmlText += "Table Number " + i + "&lt;/br>";
-        htmlText += getNumberTableText(i);
-        htmlText += "&lt;/br>";
+var outputText = "Factorial of " + number + " is ";
+if (number === 0) {
+    outputText += 1;
+} else if (number > 0) {
+    var res = number;
+    for (var i = number - 1; i > 1; --i) {
+        res *= i;
     }
-    document.getElementById("outputAll").innerHTML = htmlText;
+    outputText += res;
+} else {
+    outputText += "NaN";
 }
 
-function getNumberTableText(number) {
-    var htmlText = "";
-    for (var i = 1; i &lt;= 10; ++i) {
-        htmlText += (number + " x " + i + " = ") + (number * i) + "&lt;/br>";
-    } 
-    return htmlText;
-}
+document.getElementById("output").innerText = outputText;   
             </code>
         </pre>
     </figure>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="app.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/github.css">
 
-    <title>[Code] 4. Creating multiplication table</title>
+    <title>[Code] 1. Calculator</title>
 </head>
 <body>
     <a href="../../index.html">&lt; Back to Menu</a>
@@ -28,16 +28,27 @@
 
     &lt;link rel="stylesheet" type="text/css" href="app.css">
 
-    &lt;title>4. Creating multiplication table&lt;/title>
+    &lt;title>1. Calculator&lt;/title>
 &lt;/head>
 &lt;body>
-    &lt;label for="number">Number: &lt;/label>
-    &lt;input type="number" id="number">
-    &lt;button onclick="generateTable()">Generate Table&lt;/button>
-    &lt;h1 id="output">&lt;/h1>
+    &lt;div>
+        &lt;label for="firstNum">1st Number: &lt;/label>
+        &lt;input type="number" id="firstNum">
+    &lt;/div>
+    &lt;div>
+        &lt;label for="secondNum">2nd Number: &lt;/label>
+        &lt;input type="number" id="secondNum">
+    &lt;/div>
 
-    &lt;button onclick="generateAllTable()">Generate All Table&lt;/button>
-    &lt;h2 id="outputAll">&lt;/h2>
+    &lt;div>
+        &lt;button onclick="multiply()">Multiply&lt;/button>
+        &lt;button onclick="divide()">Divide&lt;/button>
+    &lt;/div>
+
+    &lt;div>
+        The Result is :
+        &lt;div id="output">&lt;/div>
+    &lt;/div>
 
     &lt;script type="text/javascript" src="app.js">&lt;/script>
 &lt;/body>
@@ -50,28 +61,17 @@
         <figcaption>JavaScript</figcaption>
         <pre>
             <code data-language="javascript">              
-function generateTable() {
-    var htmlText = getNumberTableText(document.getElementById("number").value);
-    document.getElementById("output").innerHTML = htmlText;    
+var firstNumInput = document.getElementById("firstNum");
+var secondNumInput = document.getElementById("secondNum");
+var outputForm = document.getElementById("output");
+
+function multiply() {
+    outputForm.innerText = firstNumInput.value * secondNumInput.value;
 }
 
-function generateAllTable() {
-    var htmlText = "";
-    for (var i = 1; i &lt;= 10; ++i) {
-        htmlText += "Table Number " + i + "&lt;/br>";
-        htmlText += getNumberTableText(i);
-        htmlText += "&lt;/br>";
-    }
-    document.getElementById("outputAll").innerHTML = htmlText;
-}
-
-function getNumberTableText(number) {
-    var htmlText = "";
-    for (var i = 1; i &lt;= 10; ++i) {
-        htmlText += (number + " x " + i + " = ") + (number * i) + "&lt;/br>";
-    } 
-    return htmlText;
-}
+function divide() {
+    outputForm.innerText = firstNumInput.value / secondNumInput.value;
+}                
             </code>
         </pre>
     </figure>

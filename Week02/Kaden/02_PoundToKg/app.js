@@ -1,7 +1,7 @@
-function weightConverterLtoG(pounds) {
-    document.getElementById("outputKG").innerText = pounds / 2.2;
-}
-
-function weightConverterGtoL(kg) {
-    document.getElementById("outputLB").innerText = kg * 2.2;
+function weightConverter(num) {
+    if (document.activeElement.id === "inputLB") {
+        document.getElementById("outputKG").innerText = num / 2.2;
+    } else {
+        document.getElementById("outputLB").innerText = num * 2.2;
+    }
 }

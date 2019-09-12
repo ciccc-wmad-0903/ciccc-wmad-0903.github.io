@@ -18,5 +18,5 @@ function getNumberTableText(number) {
     for (var i = 1; i <= 10; ++i) {
         htmlText += (number + " x " + i + " = ") + (number * i) + "</br>";
     } 
-    return htmlText
+    return htmlText;
 }

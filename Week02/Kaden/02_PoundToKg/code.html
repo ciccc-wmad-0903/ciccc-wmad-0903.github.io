@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/github.css">
+
+    <title>[Code] 2. Pound to Kg / Kg to Pound</title>
+</head>
+<body>
+    <a href="../../index.html">&lt; Back to Menu</a>
+    <a href="./index.html">Page View</a>
+    <hr>
+
+    <figure>
+        <figcaption>HTML</figcaption>
+        <pre>
+            <code data-language="html">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    &lt;link rel="stylesheet" type="text/css" href="app.css">
+
+    &lt;title>2. Pound to Kg / Kg to Pound&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;div>
+        &lt;label for="inputLB">Pounds&lt;/label>
+        &lt;input type="number" id="inputLB" oninput="weightConverter(this.value)">
+        &lt;p>Kilograms: &lt;span id="outputKG">&lt;/span>&lt;/p>
+    &lt;/div>
+    &lt;hr>
+    &lt;div>
+        &lt;label for="inputKG">Kilograms&lt;/label>
+        &lt;input type="number" id="inputKG" onchange="weightConverter(this.value)">
+        &lt;p>Pounds: &lt;span id="outputLB">&lt;/span>&lt;/p>
+    &lt;/div>
+
+    &lt;script type="text/javascript" src="app.js">&lt;/script>
+&lt;/body>
+&lt;/html>
+            </code>
+        </pre>
+    </figure>
+
+    <figure>
+        <figcaption>JavaScript</figcaption>
+        <pre>
+            <code data-language="javascript">
+function weightConverter(num) {
+    if (document.activeElement.id === "inputLB") {
+        document.getElementById("outputKG").innerText = num / 2.2;
+    } else {
+        document.getElementById("outputLB").innerText = num * 2.2;
+    }
+}
+            </code>
+        </pre>
+    </figure>
+
+    <script type="text/javascript" src="../assets/js/rainbow-custom.min.js"></script>
+</body>
+</html>
