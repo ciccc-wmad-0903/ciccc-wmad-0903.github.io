@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" type="text/css" href="app.css">
-
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>Calculator</title>
 </head>
 <body>
-
-    <script type="text/javascript" src="app.js"></script>
+<form>
+    1st Number: <input class="txt1" type="text" id="firstNumber" /><br>
+    2nd Number: <input class="txt2"  type="text" id="secondNumber" /><br>
+    <input class="btn1" type="button" onClick="multiplyBy()" value="Multiply"/>
+    <input class="btn2" type="button" onClick="divideBy()" value="Divide" />
+</form>
+<p>The Result is: </p><br>
+<span class="rst" id="result"></span>
+<script src="main.js"></script>
+</h1>
 </body>
 </html>
