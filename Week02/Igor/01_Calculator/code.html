@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="/Week02/assets/css/github.css">
+    <link rel="stylesheet" type="text/css" href="/Week02/assets/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="/Week02/assets/css/code.css">
+
+    <title>[Code] 1. Calculator</title>
+</head>
+<body>
+    <header>
+        <a href="/Week02/"><button class="navBtn mainNavBtn">MAIN MENU</button></a>
+        <div id="navTitle"><script>document.getElementById("navTitle").innerText = document.title;</script></div>
+        <a href="./"><button class="navBtn toggleNavBtn">PAGE VIEW</button></a>
+    </header>
+
+    <figure>
+        <figcaption>HTML</figcaption>
+        <pre>
+            <code data-language="html">              
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge">
+    &lt;link rel="stylesheet" href="main.css" type="text/css">
+    &lt;title>1. Calculator&lt;/title>
+&lt;/head>
+&lt;body>    
+    &lt;form>
+        1st Number: &lt;input class="txt1" type="text" id="firstNumber" />&lt;br>
+        2nd Number: &lt;input class="txt2"  type="text" id="secondNumber" />&lt;br>
+        &lt;input class="btn1" type="button" onClick="multiplyBy()" value="Multiply"/>
+        &lt;input class="btn2" type="button" onClick="divideBy()" value="Divide" />
+    &lt;/form>
+    &lt;p>The Result is: &lt;/p>&lt;br>
+    &lt;span class="rst" id="result">&lt;/span>
+    &lt;script type="text/javascript" src="main.js">&lt;/script>
+&lt;/body>
+&lt;/html>
+            </code>
+        </pre>
+    </figure>
+
+    <figure>
+        <figcaption>JavaScript</figcaption>
+        <pre>
+            <code data-language="javascript">              
+function multiplyBy() {
+    var num1 = document.getElementById("firstNumber").value;
+    var num2 = document.getElementById("secondNumber").value;
+
+    document.getElementById("result").innerText = num1 * num2;
+}
+function divideBy() {
+    var num1 = document.getElementById("firstNumber").value;
+    var num2 = document.getElementById("secondNumber").value;
+
+    document.getElementById("result").innerText = num1 / num2;
+}
+            </code>
+        </pre>
+    </figure>
+
+    <figure>
+        <figcaption>CSS</figcaption>
+        <pre>
+            <code data-language="css">              
+.btn1 {
+    background-color: aqua;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0%;
+}
+
+.btn2 {
+    background-color: aqua;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -4px;
+}
+
+.txt1 {
+    background-color: aqua;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin-left: 5px; 
+    
+}
+
+p {
+    margin-bottom: -20px;
+}
+
+#result {
+    font-size: 4em;
+    font-weight: bold;
+    
+}
+
+.txt2 {
+    background-color: aqua;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+.rst {
+    width: 300px;
+    height: 300px;
+}
+            </code>
+        </pre>
+    </figure>
+
+    <script type="text/javascript" src="/Week02/assets/js/rainbow-custom.min.js"></script>
+</body>
+</html>
