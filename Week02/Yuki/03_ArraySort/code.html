@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/Week02/assets/css/menu.css">
     <link rel="stylesheet" type="text/css" href="/Week02/assets/css/code.css">
 
-    <title>[Code] 5. Factorial of N number</title>
+    <title>[Code] 3. Array Sort</title>
 </head>
 <body>
     <header>
@@ -29,12 +29,23 @@
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
     &lt;meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    &lt;link rel="stylesheet" type="text/css" href="/Week02/assets/css/menu.css">
     &lt;link rel="stylesheet" type="text/css" href="app.css">
 
-    &lt;title>5. Factorial of N number&lt;/title>
+    &lt;title>3. Array Sort&lt;/title>
 &lt;/head>
+
 &lt;body>
-    &lt;h1 id="output">&lt;/h1>
+    &lt;header>
+        &lt;a href="/Week02/">&lt;button class="navBtn mainNavBtn">MAIN MENU&lt;/button>&lt;/a>
+        &lt;div id="navTitle">&lt;script>document.getElementById("navTitle").innerText = document.title;&lt;/script>&lt;/div>
+        &lt;a href="./code.html">&lt;button class="navBtn toggleNavBtn">CODE VIEW&lt;/button>&lt;/a>
+    &lt;/header>
+    
+    &lt;div>
+        &lt;button id="reverse" onclick="reverse()">Sort Twice&lt;/button>    
+        &lt;div id="output">&lt;/div>
+    &lt;/div>
 
     &lt;script type="text/javascript" src="app.js">&lt;/script>
 &lt;/body>
@@ -47,22 +58,31 @@
         <figcaption>JavaScript</figcaption>
         <pre>
             <code data-language="javascript">              
-var number = Number(prompt("Integer Number? "));
+var fruits = [ "Durian", "Figs", "Blackberries", "Elderberries", "Apricots", "Cherry", "Graopefruit"];
 
-var outputText = "Factorial of " + number + " is ";
-if (number === 0) {
-    outputText += 1;
-} else if (number > 0) {
-    var res = number;
-    for (var i = number - 1; i > 1; --i) {
-        res *= i;
-    }
-    outputText += res;
-} else {
-    outputText += "NaN";
+document.getElementById("output").innerHTML = fruits;
+
+fruits.sort();
+fruits.reverse();
+
+function reverse() {
+    fruits.reverse();
+    document.getElementById("output").innerHTML = fruits;
 }
+            </code>
+        </pre>
+    </figure>
 
-document.getElementById("output").innerText = outputText;   
+    <figure>
+        <figcaption>CSS</figcaption>
+        <pre>
+            <code data-language="css">
+div {
+    background-color: black;
+    padding: 5px;
+    color: white;
+    border: 3px solid rgb(96, 182, 96);
+}
             </code>
         </pre>
     </figure>

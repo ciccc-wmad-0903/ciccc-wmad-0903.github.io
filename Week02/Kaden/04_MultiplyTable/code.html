@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" type="text/css" href="app.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/github.css">
+    <link rel="stylesheet" type="text/css" href="/Week02/assets/css/github.css">
+    <link rel="stylesheet" type="text/css" href="/Week02/assets/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="/Week02/assets/css/code.css">
 
     <title>[Code] 4. Creating multiplication table</title>
 </head>
 <body>
-    <a href="../../index.html">&lt; Back to Menu</a>
-    <a href="./index.html">Page View</a>
-    <hr>
+    <header>
+        <a href="/Week02/"><button class="navBtn mainNavBtn">MAIN MENU</button></a>
+        <div id="navTitle"><script>document.getElementById("navTitle").innerText = document.title;</script></div>
+        <a href="./"><button class="navBtn toggleNavBtn">PAGE VIEW</button></a>
+    </header>
 
     <figure>
         <figcaption>HTML</figcaption>
@@ -76,6 +79,6 @@ function getNumberTableText(number) {
         </pre>
     </figure>
 
-    <script type="text/javascript" src="../assets/js/rainbow-custom.min.js"></script>
+    <script type="text/javascript" src="/Week02/assets/js/rainbow-custom.min.js"></script>
 </body>
 </html>

@@ -4,43 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Array Sort</title>
+
+    <link rel="stylesheet" type="text/css" href="/Week02/assets/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
+
+    <title>3. Array Sort</title>
 </head>
 
-<style>
-    div{
-        background-color: black;
-        padding: 5px;
-        color: white;
-        border: 3px solid rgb(96, 182, 96);
-    }
-    
-</style>
 <body>
+    <header>
+        <a href="/Week02/"><button class="navBtn mainNavBtn">MAIN MENU</button></a>
+        <div id="navTitle"><script>document.getElementById("navTitle").innerText = document.title;</script></div>
+        <a href="./code.html"><button class="navBtn toggleNavBtn">CODE VIEW</button></a>
+    </header>
+
     <div>
         <button id="reverse" onclick="reverse()">Sort Twice</button>    
         <div id="output"></div>
     </div>
 
-    
-        
-    
-    <script>
-
-        var fruits = [ "Durian", "Figs", "Blackberries", "Elderberries", "Apricots", "Cherry", "Graopefruit"];
-
-        document.getElementById("output").innerHTML = fruits;
-
-        fruits.sort();
-        fruits.reverse();
-
-        function reverse() {
-            fruits.reverse();
-            document.getElementById("output").innerHTML = fruits;
-        }
-
-        // document.getElementById("reverse").addEventListener("click", div);
-    
-    </script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
