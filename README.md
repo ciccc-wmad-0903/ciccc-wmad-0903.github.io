@@ -2,4 +2,4 @@ Test for conflict in fork
 
 conflict again
 
-another conflict by kaden-kykim
+another conflict by ciccc-kaden
