@@ -1,5 +1,1 @@
-Test for conflict in fork
-
-conflict again
-
-another conflict by ciccc-kaden
+#Final Project: Interactive web site for kids
