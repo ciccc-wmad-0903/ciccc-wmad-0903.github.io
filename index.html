@@ -45,25 +45,31 @@
                     <!-- TODO: Choose Left side image in CSS (now, temporal image) -->
                 </div>
                 <div class="gameGridItem">
-                    <div id="game1Content" class="hiddenElement gameContent">
+                    <div id="game1Content" class="hiddenElement">
                         <p id="gameTitle">Game 1: Who are you?</p>
-
-                        <!-- TODO: Game 1's HTML body Code, except output -->
+                        
+                        <div id="g1InputForm">
+                            <label class="g1InputLabel" for="g1FirstName">First Name</label>
+                            <input class="g1InputText" type="text" id="g1FirstName" required>
+                            <label class="g1InputLabel" for="g1LastName">Last Name</label>
+                            <input class="g1InputText" type="text" id="g1LastName">
+                            <button id="g1InputButton" onclick="g1InputUserName()">Submit</button>
+                        </div>
 
                     </div>
-                    <div id="game2Content" class="hiddenElement gameContent">
+                    <div id="game2Content" class="hiddenElement">
                         <p id="gameTitle">Game 2: Prime Numbers</p>
 
                         <!-- TODO: Game 2's HTML body Code, except output -->
 
                     </div>
-                    <div id="game3Content" class="hiddenElement gameContent">
+                    <div id="game3Content" class="hiddenElement">
                         <p id="gameTitle">Game 3: Calculator</p>
 
                         <!-- TODO: Game 3's HTML body Code, except output -->
 
                     </div>
-                    <div id="game4Content" class="hiddenElement gameContent">
+                    <div id="game4Content" class="hiddenElement">
                         <p id="gameTitle">Game 4: Lottery Program</p>
 
                         <!-- TODO: Game 4's HTML body Code, except output -->
@@ -71,7 +77,7 @@
                     </div>
                 </div>
                 <div id="gameOutput" class="gameGridItem">
-                    <div id="output">Check the output</div>
+                    <div id="output"></div>
                     <!-- Output -->
                 </div>
             </div>
@@ -79,6 +85,7 @@
     </div>
 
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/game1.js"></script>
 
 </body>
 </html>

@@ -1,17 +1,13 @@
 /* Game Contents */
 .gameGridContainer {
     display: grid;
-    grid-template-columns: 10% auto 40%;
+    grid-template-columns: 10% 50% 40%;
     padding: 0;
     margin-top: 30px;
 }
 
 .gameGridItem {
     height: 300px;
-}
-
-.gameContent {
-    position: absolute;
 }
 
 #output {

@@ -1,0 +1,40 @@
+.g1InputText {
+    width: 100%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.g1InputLabel {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#g1InputButton {
+    width: 30%;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    outline: none;
+}
+
+#g1InputForm {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#output {
+    font-size: 1.2em;
+    margin-top: 30%;
+    line-height: 1.5em;
+}
