@@ -7,7 +7,7 @@ function calculate() {
     // Checks the value inside the Number input
      var number1 = parseInt(document.getElementById("number1").value);
      var number2 = parseInt(document.getElementById("number2").value);
-     var calType = document.getElementById("cal_type").value;
+     var calType = document.querySelector('input[id="cal_type"]:checked').value;
      var answer = parseInt(document.getElementById("answer").value);
      var result;
 
