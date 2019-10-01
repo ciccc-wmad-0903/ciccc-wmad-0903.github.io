@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Website for Kids</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Passion+One&display=swap" rel="stylesheet">
+
+    <!-- Customize Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/game.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/game1.css">
+</head>
+<body>
+    <nav class="mainNavBar">
+        <a id="mainNavBarHome" class="mainNavContent" href="/">Home</a>
+        <span id="mainNavBarUserInfo" class="mainNavContent">Hello, Newcomer!</span>
+    </nav>
+
+    <div id="mainContent">
+        <div id="mainMenuContent" class="hiddenElement visible">
+            <h1 id="mainMenuComment">Please Select Game!</h1>
+            <div class="mainMenuGridContainer">
+                <button id="mainMenuGridItem1" class="mainMenuGridItem" onclick="visibleGame()">
+                    <span>Game 1: Who are you?</span>
+                </button>
+                <button id="mainMenuGridItem2" class="mainMenuGridItem" onclick="visibleGame()">
+                    <span>Game 2: Prime Numbers</span>
+                </button>
+                <button id="mainMenuGridItem3" class="mainMenuGridItem" onclick="visibleGame()">
+                    <span>Game 3: Calculator</span>
+                </button>
+                <button id="mainMenuGridItem4" class="mainMenuGridItem" onclick="visibleGame()">
+                    <span>Game 4: Lottery Program</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="eachGameContent" class="hiddenElement">
+            <div class="gameGridContainer">
+                <div id="gameLeftImage" class="gameGridItem">
+                    <!-- TODO: Choose Left side image in CSS (now, temporal image) -->
+                </div>
+                <div class="gameGridItem">
+                    <div id="game1Content" class="hiddenElement gameContent">
+                        <p id="gameTitle">Game 1: Who are you?</p>
+
+                        <!-- TODO: Game 1's HTML body Code, except output -->
+
+                    </div>
+                    <div id="game2Content" class="hiddenElement gameContent">
+                        <p id="gameTitle">Game 2: Prime Numbers</p>
+
+                        <!-- TODO: Game 2's HTML body Code, except output -->
+
+                    </div>
+                    <div id="game3Content" class="hiddenElement gameContent">
+                        <p id="gameTitle">Game 3: Calculator</p>
+
+                        <!-- TODO: Game 3's HTML body Code, except output -->
+
+                    </div>
+                    <div id="game4Content" class="hiddenElement gameContent">
+                        <p id="gameTitle">Game 4: Lottery Program</p>
+
+                        <!-- TODO: Game 4's HTML body Code, except output -->
+
+                    </div>
+                </div>
+                <div id="gameOutput" class="gameGridItem">
+                    <div id="output">Check the output</div>
+                    <!-- Output -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* Color Reference */
+/* #db2763 #b0db43 #b9e3c6 #59c9a5 #23395b */
+
+/* General Style */
+* {
+    font-family: 'Passion One', cursive;
+}
+
+body {
+    background-color: #b9e3c6;
+    margin: 35px 0 0 0;
+    padding: 0;
+}
+
+/* Nav Bar */
+.mainNavBar {
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #db2763;
+    color: #b9e3c6;    
+    width: 100%;
+    min-width: 480px;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+}
+
+.mainNavContent {
+    padding: 5px 15px;
+}
+
+#mainNavBarHome {
+    float: left;
+    outline: none;
+    color: #b9e3c6;
+    text-decoration: none;
+    -webkit-transition-duration: 0.25s; /* Safari */
+    transition-duration: 0.25s;
+}
+
+#mainNavBarHome:hover {
+    background-color: #b9e3c6;
+    color: #db2763;
+}
+
+#mainNavBarUserInfo {
+    float: right;
+}
+
+/* Main Content */
+#mainContent {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.hiddenElement {
+    height: 0px;
+    z-index: -1;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.75s, opacity 0.75s linear;
+}
+  
+.hiddenElement.visible {
+    /* position: static; */
+    z-index: auto;
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Main menu */
+.mainMenuGridContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 100px;
+    margin-top: 30px;
+}
+
+.mainMenuGridItem {
+    background-size: 100%;
+    height: 0;
+    padding-bottom: 55%;
+    overflow: hidden;
+    margin: 5px;
+    border-radius: 3%;
+    -webkit-transition-duration: 0.25s; /* Safari */
+    transition-duration: 0.25s;
+}
+
+.mainMenuGridItem:hover {
+    background-size: 105%;
+    background-position: 50%;
+    height: 0;
+    padding-bottom: 55%;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.mainMenuGridContainer button {
+    outline: none;
+}
+
+.mainMenuGridContainer button span {
+    font-size: 1.5em;
+    color: #b9e3c6;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 1.1px;
+    text-align: center;
+    margin-top: 45%;
+    text-shadow: -1px -1px #23395b, 1px -1px #23395b, -1px 1px #23395b, 1px 1px #23395b;
+}
+
+#mainMenuComment {
+    letter-spacing: 1.3px;
+    color: #23395b;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 15px;
+    display: block;
+}
+
+#mainMenuGridItem1 {
+    background-image: url("https://images.unsplash.com/photo-1554456854-55a089fd4cb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+}
+
+#mainMenuGridItem2 {
+    background-image: url("https://images.unsplash.com/photo-1525253086316-d0c936c814f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+}
+
+#mainMenuGridItem3 {
+    background-image: url("https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+}
+
+#mainMenuGridItem4 {
+    background-image: url("https://images.unsplash.com/photo-1443806798002-651c462956ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+}
+
