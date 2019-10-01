@@ -65,6 +65,26 @@
                     </div>
                     <div id="game3Content" class="hiddenElement">
                         <p id="gameTitle">Game 3: Calculator</p>
+                        <section id="g3">
+                            <h1>Calculation Game</h1>
+                            <p>*max 3 digits 0-999</p>
+                            <input id="number1" type="number" placeholder="1st number" min="0" max="999"/><br>
+                            <input id="number2" type="number" placeholder="2nd number" min="0" max="999"/><br>
+                            <form>
+                                <input type="radio" value="1" name="cal_type" id="cal_type" ><img src="images/plus.png"><br>
+                                <input type="radio" value="2" name="cal_type" id="cal_type" ><img src="images/minus.png"><br>
+                                <input type="radio" value="3" name="cal_type" id="cal_type" ><img src="images/multiply.png"><br>
+                                <input type="radio" value="4" name="cal_type" id="cal_type" ><img src="images/divide.png"><br>
+                            </form>
+                            Answer <input id="answer" type="text" placeholder="Answer"/> <br>
+                            <button onclick='calculate()'>Check Answer</button>
+                        </section>
+                        <section>
+                            <span id="resultContainer"></span>
+                        </section>
+                        </div>
+                        <script src="assets/js/game3.js"></script>
+                            
 
                         <!-- TODO: Game 3's HTML body Code, except output -->
 

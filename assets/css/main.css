@@ -137,3 +137,120 @@ body {
     background-image: url("https://images.unsplash.com/photo-1443806798002-651c462956ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
 }
 
+/* Game page templete */
+
+.gameGridContainer {
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.gameGridItem {
+    height: 300px;
+}
+
+#output {
+    color: #b9e3c6;
+    padding: 10%;
+    margin-top: 20%;
+    letter-spacing: 1.05px;
+}
+
+#gameOutput {
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/28/16/45/blackboard-614979_960_720.jpg");
+    background-size: 100% 100%;
+}
+
+#gameTitle {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#gameLeftImage {
+    background-image: url("https://file.namu.moe/file/8bc9e381797334eb33da66e3ba501be185dcdd0da33f657e698eea93d7de83e0fd3b8bb7d93d5ba02018ebe08b34a4c7a395313980594ddc2f215cc32b2d5b29");
+    background-size: 100% 50%;
+    margin-right: -25%;
+}
+
+
+/* ----------------------------------------*
+*    game 1 -- Kaden                      *
+*------------------------------------------*/
+.g1InputText {
+    width: 100%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.g1InputLabel {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#g1InputButton {
+    width: 30%;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    outline: none;
+}
+
+#g1InputForm {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#output {
+    font-size: 1.2em;
+    margin-top: 30%;
+    line-height: 1.5em;
+}
+
+
+/* ----------------------------------------*
+*    / game 1- Kaden                     *
+*------------------------------------------*/
+
+/* ----------------------------------------*
+*    game 2 -- Igor                     *
+*------------------------------------------*/
+
+
+
+
+/* ----------------------------------------*
+*    game 2 -- Igor                     *
+*------------------------------------------*/
+
+/* ----------------------------------------*
+*    game 3 -- Sayumi                     *
+*------------------------------------------*/
+
+
+
+
+/* ----------------------------------------*
+*    game 3 -- Sayumi                     *
+*------------------------------------------*/
+/* ----------------------------------------*
+*    game 4 -- Chris & Vlad                *
+*------------------------------------------*/
+
+
+
+
+/* ----------------------------------------*
+*    game 4 -- Chris & Vlad                *
+*------------------------------------------*/
