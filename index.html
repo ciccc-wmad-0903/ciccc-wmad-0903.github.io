@@ -40,12 +40,13 @@
         </div>
 
         <div id="eachGameContent" class="hiddenElement">
-            <div class="gameGridContainer">
-                <div id="gameLeftImage" class="gameGridItem">
-                    <!-- TODO: Choose Left side image in CSS (now, temporal image) -->
-                </div>
-                <div class="gameGridItem">
-                    <div id="game1Content" class="hiddenElement">
+            <div id="game1Content" class="hiddenElement">
+                <div class="gameGridContainer">
+                    <div id="gameLeftImage" class="gameGridItem">
+                        <!-- TODO: Choose Left side image in CSS (now, temporal image) -->
+                    </div>
+
+                    <div class="gameGridItem">
                         <h2 id="gameTitle">Game 1: Who are you?</h2>
                         
                         <div id="g1InputForm">
@@ -55,61 +56,56 @@
                             <input class="g1InputText" type="text" id="g1LastName">
                             <button id="g1InputButton" onclick="g1InputUserName()">Submit</button>
                         </div>
-
                     </div>
-                    <div id="game2Content" class="hiddenElement">
-                        <h2 id="gameTitle">Game 2: Prime Numbers</h2>
 
-                        <!-- TODO: Game 2's HTML body Code, except output -->
-
+                    <div id="gameOutput" class="gameGridItem">
+                        <div id="output"></div>
+                        <!-- Output -->
                     </div>
-                    <div id="game3Content" class="hiddenElement">
-                        <h2 id="gameTitle">Game 3: Calculator</h2>
-                        <section id="g3">
-                            <p>*max 3 digits 0-999</p>
-                            <input id="number1" type="number" placeholder="1st number" min="0" max="999"/>
-                            <form>
-                                <input type="radio" value="1" name="cal_type" id="cal_type" ><img src="assets/images/plus.png"><br>
-                                <input type="radio" value="2" name="cal_type" id="cal_type" ><img src="assets/images/minus.png"><br>
-                                <input type="radio" value="3" name="cal_type" id="cal_type" ><img src="assets/images/multiply.png"><br>
-                                <input type="radio" value="4" name="cal_type" id="cal_type" ><img src="assets/images/divide.png"><br>
-                            </form>
-                            <input id="number2" type="number" placeholder="2nd number" min="0" max="999"/><br>
-
-                            Answer <input id="answer" type="text" placeholder="Answer"/> <br>
-                            <button onclick='calculate()'>Check Answer</button>
-                        </section>
-                        <section>
-                            <span id="resultContainer"></span>
-                        </section>
-<<<<<<< HEAD
-                        <script src="assets/js/game3.js"></script>
-=======
-                        </div>
-
->>>>>>> 3192d5998087dff5756ebce969eae1cd09196e4e
-                            
-
-                        <!-- TODO: Game 3's HTML body Code, except output -->
-
-                    </div>
-                    <div id="game4Content" class="hiddenElement">
-                        <h2 id="gameTitle">Game 4: Lottery Program</h2>
-
-                        <!-- TODO: Game 4's HTML body Code, except output -->
-
-                    </div>
-                </div>
-                <div id="gameOutput" class="gameGridItem">
-                    <div id="output"></div>
-                    <!-- Output -->
+                    
                 </div>
             </div>
+
+            <div id="game2Content" class="hiddenElement">
+                <h2 id="gameTitle">Game 2: Prime Numbers</h2>
+
+                <!-- TODO: Game 2's HTML body Code, except output -->
+
+            </div>
+
+            <div id="game3Content" class="hiddenElement">
+                <h2 id="gameTitle">Game 3: Calculator</h2>
+                <section id="g3">
+                    <p>*max 3 digits 0-999</p>
+                    <input id="number1" type="number" placeholder="1st number" min="0" max="999"/>
+                    <form>
+                        <input type="radio" value="1" name="cal_type" id="cal_type" ><img src="assets/images/plus.png"><br>
+                        <input type="radio" value="2" name="cal_type" id="cal_type" ><img src="assets/images/minus.png"><br>
+                        <input type="radio" value="3" name="cal_type" id="cal_type" ><img src="assets/images/multiply.png"><br>
+                        <input type="radio" value="4" name="cal_type" id="cal_type" ><img src="assets/images/divide.png"><br>
+                    </form>
+                    <input id="number2" type="number" placeholder="2nd number" min="0" max="999"/><br>
+
+                    Answer <input id="answer" type="text" placeholder="Answer"/> <br>
+                    <button onclick='calculate()'>Check Answer</button>
+                </section>
+                <section>
+                    <span id="resultContainer"></span>
+                </section>
+            </div>
+
+            <div id="game4Content" class="hiddenElement">
+                <h2 id="gameTitle">Game 4: Lottery Program</h2>
+
+                <!-- TODO: Game 4's HTML body Code, except output -->
+
+            </div>      
         </div>
     </div>
 
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/game1.js"></script>
+    <script type="text/javascript" src="assets/js/game2.js"></script>
     <script type="text/javascript" src="assets/js/game3.js"></script>
 
 </body>
