@@ -33,8 +33,8 @@
                 <button id="mainMenuGridItem3" class="mainMenuGridItem" onclick="visibleGame()">
                     <span>Game 3: Calculator</span>
                 </button>
-                <button id="mainMenuGridItem4" class="mainMenuGridItem" onclick="visibleGame()">
-                    <span>Game 4: Lottery Program</span>
+                <button id="mainMenuGridItem4" clapss="mainMenuGridItem" onclick="visibleGame()">
+                    <span>Game 4: Lottery Program</san>
                 </button>
             </div>
         </div>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="gameGridItem">
                     <div id="game1Content" class="hiddenElement">
-                        <p id="gameTitle">Game 1: Who are you?</p>
+                        <h2 id="gameTitle">Game 1: Who are you?</h2>
                         
                         <div id="g1InputForm">
                             <label class="g1InputLabel" for="g1FirstName">First Name</label>
@@ -58,24 +58,24 @@
 
                     </div>
                     <div id="game2Content" class="hiddenElement">
-                        <p id="gameTitle">Game 2: Prime Numbers</p>
+                        <h2 id="gameTitle">Game 2: Prime Numbers</h2>
 
                         <!-- TODO: Game 2's HTML body Code, except output -->
 
                     </div>
                     <div id="game3Content" class="hiddenElement">
-                        <p id="gameTitle">Game 3: Calculator</p>
+                        <h2 id="gameTitle">Game 3: Calculator</h2>
                         <section id="g3">
-                            <h1>Calculation Game</h1>
                             <p>*max 3 digits 0-999</p>
-                            <input id="number1" type="number" placeholder="1st number" min="0" max="999"/><br>
-                            <input id="number2" type="number" placeholder="2nd number" min="0" max="999"/><br>
+                            <input id="number1" type="number" placeholder="1st number" min="0" max="999"/>
                             <form>
                                 <input type="radio" value="1" name="cal_type" id="cal_type" ><img src="images/plus.png"><br>
                                 <input type="radio" value="2" name="cal_type" id="cal_type" ><img src="images/minus.png"><br>
                                 <input type="radio" value="3" name="cal_type" id="cal_type" ><img src="images/multiply.png"><br>
                                 <input type="radio" value="4" name="cal_type" id="cal_type" ><img src="images/divide.png"><br>
                             </form>
+                            <input id="number2" type="number" placeholder="2nd number" min="0" max="999"/><br>
+
                             Answer <input id="answer" type="text" placeholder="Answer"/> <br>
                             <button onclick='calculate()'>Check Answer</button>
                         </section>
@@ -89,7 +89,7 @@
 
                     </div>
                     <div id="game4Content" class="hiddenElement">
-                        <p id="gameTitle">Game 4: Lottery Program</p>
+                        <h2 id="gameTitle">Game 4: Lottery Program</h2>
 
                         <!-- TODO: Game 4's HTML body Code, except output -->
 

@@ -10,13 +10,22 @@ body {
     background-color: #b9e3c6;
     margin: 35px 0 0 0;
     padding: 0;
+
+}
+h2{
+    color:#db2763;
+    font-size:2em;
+}
+
+p{
+    color:#db2763;
 }
 
 /* Nav Bar */
 .mainNavBar {
     font-family: 'Luckiest Guy', cursive;
-    background-color: #db2763;
-    color: #b9e3c6;    
+    background-color: #23395b;
+    color: #59c9a5;    
     width: 100%;
     min-width: 480px;
     text-transform: uppercase;
@@ -31,15 +40,15 @@ body {
 #mainNavBarHome {
     float: left;
     outline: none;
-    color: #b9e3c6;
+    color: #59c9a5;
     text-decoration: none;
     -webkit-transition-duration: 0.25s; /* Safari */
     transition-duration: 0.25s;
 }
 
 #mainNavBarHome:hover {
-    background-color: #b9e3c6;
-    color: #db2763;
+    background-color:  #23395b;
+    color:#b9e3c6;
 }
 
 #mainNavBarUserInfo {
@@ -109,12 +118,12 @@ body {
     letter-spacing: 1.1px;
     text-align: center;
     margin-top: 45%;
-    text-shadow: -1px -1px #23395b, 1px -1px #23395b, -1px 1px #23395b, 1px 1px #23395b;
+    text-shadow: -1px -1px #db2763, 1px -1px #db2763, -1px 1px #db2763, 1px 1px #db2763;
 }
 
 #mainMenuComment {
     letter-spacing: 1.3px;
-    color: #23395b;
+    color: #db2763;
     font-size: 2.5em;
     text-align: center;
     padding-top: 15px;
