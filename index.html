@@ -22,7 +22,8 @@
 
     <div id="mainContent">
         <div id="mainMenuContent" class="hiddenElement visible">
-            <h1 id="mainMenuComment">Please Select Game!</h1>
+        <section class="main_background" style="background-image: url('assets/images/background1.png');background-repeat:no-repeat;">
+            <h1 id="mainMenuComment">Select a Game and Play!</h1>
             <div class="mainMenuGridContainer">
                 <button id="mainMenuGridItem1" class="mainMenuGridItem" onclick="visibleGame()">
                     <span>Game 1: Who are you?</span>
@@ -36,6 +37,7 @@
                 <button id="mainMenuGridItem4" class="mainMenuGridItem" onclick="visibleGame()">
                     <span>Game 4: Lottery Program</san>
                 </button>
+        </section>
             </div>
         </div>
 
@@ -76,13 +78,13 @@
             <div id="game3Content" class="hiddenElement">
                 <h2 id="gameTitle">Game 3: Calculator</h2>
                 <section class="g3">
-                    <p>*max 3 digits 0-999</p>
+                    <p>Enter two numbers and select the calculation type. Put your answer and check your answer!<br>*max 3 digits 0-999</p>
                     <div class="g3_container">
                     <div class="g3_items">
                         <input class="g3_input" id="number1" type="number" placeholder="1st number" min="0" max="999"/>
                     </div>
                     <div class="g3_items">
-                        <form>
+                        <form　class="g3_caltype">
                         <input type="radio" value="1" name="cal_type" id="cal_type" ><img src="assets/images/plus.png" width="30px"><br>
                         <input type="radio" value="2" name="cal_type" id="cal_type" ><img src="assets/images/minus.png" width="30px"><br>
                         <input type="radio" value="3" name="cal_type" id="cal_type" ><img src="assets/images/multiply.png" width="30px"><br>
@@ -100,6 +102,7 @@
                 </section>
                 <section class="g3_output">
                     <span id="resultContainer"></span>
+                    <span id="resultContainer1"></span>
                 </section>
             </div>
 
