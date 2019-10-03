@@ -12,12 +12,12 @@ body {
     padding: 0;
 
 }
-h2{
+h2 {
     color: #23395b;
     font-size:2em;
 }
 
-p{
+p {
     color:#23395b;
 }
 
@@ -61,11 +61,13 @@ p{
     margin: 70px auto;
     width: 100%;
 }
-.main_background{
+.main_background {
     margin:0 auto;
     height:650px;
     width:100%;
+    background-image: url('../images/background1.png');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hiddenElement {
@@ -165,6 +167,14 @@ p{
 }
 
 /* Game page templete */
+#gameTitle {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* ----------------------------------------*
+*    game 1 -- Kaden                      *
+*------------------------------------------*/
 
 .gameGridContainer {
     display: grid;
@@ -176,17 +186,7 @@ p{
 }
 
 .gameGridItem {
-    height: 300px;
-}
-
-#gameOutput {
-    background-image: url("https://cdn.pixabay.com/photo/2015/01/28/16/45/blackboard-614979_960_720.jpg");
-    background-size: 100% 100%;
-}
-
-#gameTitle {
-    font-size: 1.5em;
-    margin: 0;
+    height: 650px;
 }
 
 #gameLeftImage {
@@ -195,10 +195,11 @@ p{
     margin-right: -25%;
 }
 
+#gameOutput {
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/28/16/45/blackboard-614979_960_720.jpg");
+    background-size: 100% 100%;
+}
 
-/* ----------------------------------------*
-*    game 1 -- Kaden                      *
-*------------------------------------------*/
 .g1InputText {
     width: 100%;
     padding: 8px 15px;
@@ -243,15 +244,14 @@ p{
     line-height: 1.5em;
 }
 
-
 /* ----------------------------------------*
-*    / game 1- Kaden                     *
+*    game 1 -- Kaden                      *
 *------------------------------------------*/
 
 /* ----------------------------------------*
 *    game 2 -- Igor                     *
 *------------------------------------------*/
-#divBox{
+#divBox {
     
     border: 1px solid black;
     /* background-color: aqua; */
@@ -260,19 +260,19 @@ p{
     height: 300px;
     position: relative;
 }
-#num1{
+
+#num1 {
     padding: 10px;
     width: 80%;
     font-size: 150%;
 }
-#button{
-background-color: #0050FF;
-padding: 10px;
-border-radius: 30%;
-color: red;
+
+#button {
+    background-color: #0050FF;
+    padding: 10px;
+    border-radius: 30%;
+    color: red;
 }
-
-
 
 /* ----------------------------------------*
 *    game 2 -- Igor                     *
@@ -357,12 +357,10 @@ color: red;
 	position:relative;
 	top:1px;
 }
-
-
-
 /* ----------------------------------------*
 *    game 3 -- Sayumi                     *
 *------------------------------------------*/
+
 /* ----------------------------------------*
 *    game 4 -- Chris & Vlad                *
 *------------------------------------------*/
