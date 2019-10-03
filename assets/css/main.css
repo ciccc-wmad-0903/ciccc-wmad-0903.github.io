@@ -1,0 +1,423 @@
+/* Color Reference */
+/* #db2763 #b0db43 #b9e3c6 #59c9a5 #23395b */
+
+/* General Style */
+* {
+    font-family: 'Passion One', cursive;
+}
+
+body {
+    background-color: #b0db43;
+    margin: 35px 0 0 0;
+    padding: 0;
+
+}
+h2 {
+    color: #23395b;
+    font-size:2em;
+}
+
+p {
+    color:#23395b;
+}
+
+/* Nav Bar */
+.mainNavBar {
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #db2763;
+    color: #23395b;    
+    width: 100%;
+    font-size:2em;
+    min-width: 480px;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+}
+
+.mainNavContent {
+    padding: 20px 100px;
+}
+
+#mainNavBarHome {
+    float: left;
+    outline: none;
+    color: #23395b;
+    text-decoration: none;
+    -webkit-transition-duration: 0.25s; /* Safari */
+    transition-duration: 0.25s;
+}
+
+#mainNavBarHome:hover {
+    background-color:  #23395b;
+    color:#db2763
+}
+
+#mainNavBarUserInfo {
+    float: right;
+}
+
+/* Main Content */
+#mainContent {
+    margin: 70px auto;
+    width: 100%;
+}
+.main_background {
+    margin:0 auto;
+    height:650px;
+    width:100%;
+    background-image: url('../images/background1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hiddenElement {
+    height: 0px;
+    z-index: -1;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.75s, opacity 0.75s linear;
+}
+  
+.hiddenElement.visible {
+    /* position: static; */
+    z-index: auto;
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Main menu */
+.mainMenuGridContainer {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    padding: 0 100px;
+    margin-left: 13%;
+    margin-top: 30px;
+}
+
+.mainMenuGridItem {
+    background-color: rgba(35, 57, 91, 0.8);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 0;
+    padding-bottom: 55%;
+    overflow: hidden;
+    margin: 5px;
+    border-radius: 50%;
+    border: 0px;
+    -webkit-transition-duration: 0.75s; /* Safari */
+    transition-duration: 0.75s;
+}
+
+.mainMenuGridItem:hover {
+    background-size: 70%;
+    background-position: 50%;
+    height: 0;
+    padding-bottom: 55%;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.mainMenuGridContainer button {
+    outline: none;
+}
+
+.mainMenuGridContainer button span {
+    font-size: 1.5rem;
+    color:  #db2763;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 1.1px;
+    text-align: center;
+    margin-top: 45%;
+    text-shadow: -1px -1px #b0db43, 1px -1px #b0db43, -1px 1px #b0db43, 1px 1px #b0db43;
+}
+
+#mainMenuComment {
+    letter-spacing: 1.3px;
+    color: #23395b;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 15px;
+    display: block;
+    text-shadow: 2px 2px 0 #db2763, -1px -1px 0 #db2763,
+    -1px 1px 0#db2763, 1px -1px 0 #db2763,
+    0px 1px 0 #db2763,  0-1px 0 #db2763,
+    -1px 0 0 #db2763, 1px 0 0 #db2763;
+
+
+}
+
+#mainMenuGridItem1 {
+    background-image: url("../images/game1.png");
+}
+
+#mainMenuGridItem2 {
+    background-image: url("../images/game2.png");
+}
+
+#mainMenuGridItem3 {
+    background-image: url("../images/game3.png");
+}
+
+#mainMenuGridItem4 {
+    background-image: url("../images/game4.png");
+}
+
+/* Game page templete */
+#gameTitle {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* ----------------------------------------*
+*    game 1 -- Kaden                      *
+*------------------------------------------*/
+
+.gameGridContainer {
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+    padding: 0;
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.gameGridItem {
+    height: 650px;
+}
+
+#gameLeftImage {
+    background-image: url("https://file.namu.moe/file/8bc9e381797334eb33da66e3ba501be185dcdd0da33f657e698eea93d7de83e0fd3b8bb7d93d5ba02018ebe08b34a4c7a395313980594ddc2f215cc32b2d5b29");
+    background-size: 100% 50%;
+    margin-right: -25%;
+}
+
+#gameOutput {
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/28/16/45/blackboard-614979_960_720.jpg");
+    background-size: 100% 100%;
+}
+
+.g1InputText {
+    width: 100%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.g1InputLabel {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#g1InputButton {
+    width: 30%;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    outline: none;
+}
+
+#g1InputForm {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#g1Output {
+    color: #b9e3c6;
+    padding: 10%;
+    margin-top: 0%;
+    letter-spacing: 1.05px;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+/* ----------------------------------------*
+*    game 1 -- Kaden                      *
+*------------------------------------------*/
+
+/* ----------------------------------------*
+*    game 2 -- Igor                     *
+*------------------------------------------*/
+#divBox {
+    
+    border: 1px solid black;
+    /* background-color: aqua; */
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    position: relative;
+}
+
+#num1 {
+    padding: 10px;
+    width: 80%;
+    font-size: 150%;
+}
+
+#button {
+    background-color: #0050FF;
+    padding: 10px;
+    border-radius: 30%;
+    color: red;
+}
+
+/* ----------------------------------------*
+*    game 2 -- Igor                     *
+*------------------------------------------*/
+
+/* ----------------------------------------*
+*    game 3 -- Sayumi                     *
+*------------------------------------------*/
+#game3Content{
+    font-size:30px;
+    margin:0 auto;
+    color:#db2763;
+    width:90%;
+    text-align:center;
+}
+.g3_input{
+    height:40px;
+    width:150px;
+    font-size:30px;
+    color: #23395b;
+    text-align: center;
+}
+.g3_container{
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    align-items:center;
+}
+.g3_items{
+    margin:20px;
+}
+.g3_output{
+    margin: 0 auto;
+    text-align: center;
+    font-size:2rem;
+    color:#b9e3c6;
+    padding-top:30px;
+    width:500px;
+    height:100px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/28/16/45/blackboard-614979_960_720.jpg");
+    background-size: 100% 100%;
+    }
+
+.g3_caltype{
+    line-height:10px;
+}
+.g3_button {
+	-moz-box-shadow: 0px 0px 0px 0px #3e7327;
+	-webkit-box-shadow: 0px 0px 0px 0px #3e7327;
+	box-shadow: 0px 0px 0px 0px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #23395b), color-stop(1, #db2763));
+	background:-moz-linear-gradient(top, #23395b 5%, #db2763 100%);
+	background:-webkit-linear-gradient(top, #23395b 5%, #db2763 100%);
+	background:-o-linear-gradient(top, #23395b 5%, #db2763 100%);
+	background:-ms-linear-gradient(top, #23395b 5%, #db2763 100%);
+	background:linear-gradient(to bottom, #23395b 5%, #db2763 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#23395b', endColorstr='#db2763',GradientType=0);
+	background-color:#23395b;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	border-radius:9px;
+	display:inline-block;
+	cursor:pointer;
+	color:#b0db43;
+	font-family:Trebuchet MS;
+	font-size:23px;
+	font-weight:bold;
+	padding:21px 44px;
+	text-decoration:none;
+}
+.g3_button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #db2763), color-stop(1, #23395b));
+	background:-moz-linear-gradient(top, #db2763 5%, #23395b 100%);
+	background:-webkit-linear-gradient(top, #db2763 5%, #23395b 100%);
+	background:-o-linear-gradient(top, #db2763 5%, #23395b 100%);
+	background:-ms-linear-gradient(top, #db2763 5%, #23395b 100%);
+	background:linear-gradient(to bottom, #db2763 5%, #23395b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#db2763', endColorstr='#23395b',GradientType=0);
+	background-color:#db2763;
+}
+.g3_button:active {
+	position:relative;
+	top:1px;
+}
+/* ----------------------------------------*
+*    game 3 -- Sayumi                     *
+*------------------------------------------*/
+
+/* ----------------------------------------*
+*    game 4 -- Chris & Vlad                *
+*------------------------------------------*/
+#gameTitle {
+    text-align: center;
+}
+#g4_inframe{
+    width:50%;
+    margin-left: 33%;
+    display: inline-flex;
+}
+#g4_fin,#g4_sin,#g4_tin{
+    width:100px;
+    height:30px;
+    font-size: 20px;
+    margin:10px;
+}
+#g4_button{
+    width:100px;
+    height:35px;
+    font-size:20px;
+    border-radius: 10%;
+    margin:10px;
+    background-color:darkcyan;
+    color:white;
+}
+#g4_button:hover{
+    width:100px;
+    height:35px;
+    font-size:20px;
+    border-radius: 10%;
+    margin:10px;
+    transform: scale(1.2,1.2);
+    background-color:rgb(16, 58, 54);
+    color:rgb(197, 121, 121);
+}
+#g4_fin:hover{
+    background-color:rgb(66, 91, 165);
+    color:rgb(233, 206, 170);
+}
+#g4_sin:hover{
+    background-color:thistle;
+    color:rgb(195, 236, 236);
+}
+#g4_tin:hover{
+    background-color:rgb(235, 224, 210);
+    color:whitesmoke;
+}
+.g4Output{
+    text-align: center;
+    width:500px;
+    height:100px;
+    margin:100px auto;
+    padding:100px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/28/16/45/blackboard-614979_960_720.jpg");
+    background-size: 100% 100%;
+    }
+/* ----------------------------------------*
+*    game 4 -- Chris & Vlad                *
+*------------------------------------------*/

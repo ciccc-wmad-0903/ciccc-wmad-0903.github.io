@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Website for Kids</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Passion+One&display=swap" rel="stylesheet">
+
+    <!-- Customize Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+    <nav class="mainNavBar">
+        <a id="mainNavBarHome" class="mainNavContent" href="/">Home</a>
+        <span id="mainNavBarUserInfo" class="mainNavContent">Hello, Newcomer!</span>
+    </nav>
+
+    <div id="mainContent">
+        <div id="mainMenuContent" class="hiddenElement visible">
+        <section class="main_background" style="background-image: url('assets/images/background1.png');background-repeat:no-repeat;">
+            <h1 id="mainMenuComment">Select a Game and Play!</h1>
+            <div class="mainMenuGridContainer">
+                <button id="mainMenuGridItem1" class="mainMenuGridItem" onclick="visibleGame()">
+                    <span>Game 1: Who are you?</span>
+                </button>
+                <button id="mainMenuGridItem2" class="mainMenuGridItem" onclick="visibleGame()">
+                    <span>Game 2: Prime Numbers</span>
+                </button>
+                <button id="mainMenuGridItem3" class="mainMenuGridItem" onclick="visibleGame()">
+                    <span>Game 3: Calculator</span>
+                </button>
+                <button id="mainMenuGridItem4" class="mainMenuGridItem" onclick="visibleGame()">
+                    <span>Game 4: Lottery Program</span>
+                </button>
+        </section>
+            </div>
+        </div>
+
+        <div id="eachGameContent" class="hiddenElement">
+            <div id="game1Content" class="hiddenElement">
+                <!-- TODO: Game 1's HTML body Code, except output -->
+                <div class="gameGridContainer">
+                    <div id="gameLeftImage" class="gameGridItem"></div>
+
+                    <div class="gameGridItem">
+                        <h2 id="gameTitle">Game 1: Who are you?</h2>
+                        
+                        <div id="g1InputForm">
+                            <label class="g1InputLabel" for="g1FirstName">First Name</label>
+                            <input class="g1InputText" type="text" id="g1FirstName" required>
+                            <label class="g1InputLabel" for="g1LastName">Last Name</label>
+                            <input class="g1InputText" type="text" id="g1LastName">
+                            <button id="g1InputButton" onclick="g1InputUserName()">Submit</button>
+                        </div>
+                    </div>
+
+                    <div id="gameOutput" class="gameGridItem">
+                        <div id="g1Output"></div>
+                        <!-- Output -->
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="game2Content" class="hiddenElement">
+                <div id="divBox">
+                <h2 id="gameTitle">Game 2: Prime Numbers</h2>
+
+                <!--<script type="text/javascript" src="game2.js"></script>-->
+                
+                <section class="g2">
+                <h3>Enter a Number from (1 to 100):</h3>
+                <input type="number" id="num1" placeholder="Enter Number ..."></br>
+                <button id="button" onclick="myFunction()">Play :D</button></br>
+                <div id="g2Output"><p>Your Answer </p></div> 
+               </section>
+
+                <!--END-->
+            </div>
+            </div>
+
+            <div id="game3Content" class="hiddenElement">
+                <h2 id="gameTitle">Game 3: Calculator</h2>
+                <section class="g3">
+                    <p>Enter two numbers and select the calculation type. Put your answer and check it!<br>*max 3 digits 0-999</p>
+                    <div class="g3_container">
+                    <div class="g3_items">
+                        <input class="g3_input" id="number1" type="number" placeholder="1st number" min="0" max="999"/>
+                    </div>
+                    <div class="g3_items">
+                        <form　class="g3_caltype">
+                        <input type="radio" value="1" name="cal_type" id="cal_type" ><img src="assets/images/plus.png" width="30px"><br>
+                        <input type="radio" value="2" name="cal_type" id="cal_type" ><img src="assets/images/minus.png" width="30px"><br>
+                        <input type="radio" value="3" name="cal_type" id="cal_type" ><img src="assets/images/multiply.png" width="30px"><br>
+                        <input type="radio" value="4" name="cal_type" id="cal_type" ><img src="assets/images/divide.png" width="30px"><br>
+                        </form>
+                    </div>
+                    <div class="g3_items">
+                    <input class="g3_input" id="number2" type="number" placeholder="2nd number" min="0" max="999"/>
+                    </div>
+                    <div class="g3_items">=</div>
+                    <div class="g3_items">
+                    <input class="g3_input" id="answer" type="text" placeholder="Answer"/>
+                    </div>
+                    <button class="g3_button" onclick='calculate()'>CHECK ANSWER</button>
+                </section>
+                <section class="g3_output">
+                    <span id="resultContainer"></span><br>
+                    <span id="resultContainer1"></span>
+                </section>
+            </div>
+
+            <div id="game4Content" class="hiddenElement">
+                <h2 id="gameTitle">Game 4: Lottery Program
+                <p>Please fill in three different number and click "check" to get result, range:1~10</p></h2>
+                <div id="g4_inframe">
+                    <input type="number" id="g4_fin" placeholder="1st number" min="1" max="10" required>
+                    <input type="number" id="g4_sin" placeholder="2nd number" min="1" max="10" required>
+                    <input type="number" id="g4_tin" placeholder="3rd number" min="1" max="10" required>
+                    <button type="button" onclick="result()" id="g4_button">Check</button>
+                </div>
+                <div class="g4Output">
+                <h1 id="g4_output"></h1>
+                <h1 id="g4_output1"></h1>
+                </div>
+                <!-- TODO: Game 4's HTML body Code, except output -->
+
+            </div>      
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/game1.js"></script>
+    <script type="text/javascript" src="assets/js/game2.js"></script>
+    <script type="text/javascript" src="assets/js/game3.js"></script>
+    <script type="text/javascript" src="assets/js/game4.js"></script>
+</body>
+</html>
