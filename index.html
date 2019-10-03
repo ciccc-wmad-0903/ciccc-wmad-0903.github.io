@@ -113,7 +113,15 @@
 
             <div id="game4Content" class="hiddenElement">
                 <h2 id="gameTitle">Game 4: Lottery Program</h2>
-
+                <p>Please fill in three different number and click "check" to get result</p>
+                <div id="inframe">
+                    <input type="number" id="fin" placeholder="1st number" min="1" max="100" required>
+                    <input type="number" id="sin" placeholder="2nd number" min="1" max="100" required>
+                    <input type="number" id="tin" placeholder="3rd number" min="1" max="100" required>
+                    <button type="button" onclick="result()" id="check">Check</button>
+                </div>
+                <h1 id="output"></h1>
+                <h1 id="output1"></h1>
                 <!-- TODO: Game 4's HTML body Code, except output -->
 
             </div>      
@@ -124,6 +132,6 @@
     <script type="text/javascript" src="assets/js/game1.js"></script>
     <script type="text/javascript" src="assets/js/game2.js"></script>
     <script type="text/javascript" src="assets/js/game3.js"></script>
-
+    <script type="text/javascript" src="assets/js/game4.js"></script>
 </body>
 </html>
