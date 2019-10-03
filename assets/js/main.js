@@ -7,10 +7,10 @@ if (firstName != null) {
     document.getElementById("mainNavBarUserInfo").innerText = "Hi, " + firstName + "!";
 }
 
-function visibleGame() {
+function visibleGame(gameNumber) {
     document.getElementById("mainMenuContent").classList.remove('visible');
     document.getElementById("eachGameContent").classList.add('visible');
-    switch (document.activeElement.id) {
+    switch (gameNumber.id) {
         case "mainMenuGridItem1":
             document.getElementById("game1Content").classList.add('visible');
             break;
