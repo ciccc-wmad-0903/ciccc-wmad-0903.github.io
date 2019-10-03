@@ -95,18 +95,22 @@ p{
 }
 
 .mainMenuGridItem {
-    background-size: 100%;
+    background-color: rgba(35, 57, 91, 1);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     height: 0;
     padding-bottom: 55%;
     overflow: hidden;
     margin: 5px;
-    border-radius: 3%;
-    -webkit-transition-duration: 0.25s; /* Safari */
-    transition-duration: 0.25s;
+    border-radius: 50%;
+    border: 0px;
+    -webkit-transition-duration: 0.75s; /* Safari */
+    transition-duration: 0.75s;
 }
 
 .mainMenuGridItem:hover {
-    background-size: 105%;
+    background-size: 70%;
     background-position: 50%;
     height: 0;
     padding-bottom: 55%;
@@ -153,11 +157,11 @@ p{
 }
 
 #mainMenuGridItem3 {
-    background-image: url("https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-image: url("../images/game3.png");
 }
 
 #mainMenuGridItem4 {
-    background-image: url("https://images.unsplash.com/photo-1443806798002-651c462956ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+    background-image: url("../images/game4.png");
 }
 
 /* Game page templete */
