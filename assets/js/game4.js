@@ -12,7 +12,8 @@ function result(){
     var e = parseInt(document.getElementById("g4_sin").value);
     var f = parseInt(document.getElementById("g4_tin").value);
     if(d == e || d == f || e == f){
-        alert("please put different number");
+        document.getElementById("g4_output").innerHTML
+            ='<span style="color: red;">Please put three different number</span>';
         return;
     }
     var inputArray = [d,e,f];
