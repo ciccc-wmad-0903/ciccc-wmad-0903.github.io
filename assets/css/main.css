@@ -59,12 +59,13 @@ p{
 /* Main Content */
 #mainContent {
     margin: 70px auto;
-    width: 80%;
+    width: 100%;
 }
 .main_background{
     margin:0 auto;
     height:650px;
     width:100%;
+    background-size: cover;
 }
 
 .hiddenElement {
@@ -87,24 +88,29 @@ p{
 /* Main menu */
 .mainMenuGridContainer {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 40%;
     padding: 0 100px;
+    margin-left: 13%;
     margin-top: 30px;
 }
 
 .mainMenuGridItem {
-    background-size: 100%;
+    background-color: rgba(35, 57, 91, 0.8);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     height: 0;
     padding-bottom: 55%;
     overflow: hidden;
     margin: 5px;
-    border-radius: 3%;
-    -webkit-transition-duration: 0.25s; /* Safari */
-    transition-duration: 0.25s;
+    border-radius: 50%;
+    border: 0px;
+    -webkit-transition-duration: 0.75s; /* Safari */
+    transition-duration: 0.75s;
 }
 
 .mainMenuGridItem:hover {
-    background-size: 105%;
+    background-size: 70%;
     background-position: 50%;
     height: 0;
     padding-bottom: 55%;
@@ -117,14 +123,14 @@ p{
 }
 
 .mainMenuGridContainer button span {
-    font-size: 1.5em;
-    color: #b9e3c6;
+    font-size: 1.5rem;
+    color:  #db2763;
     display: inline-block;
     width: 100%;
     letter-spacing: 1.1px;
     text-align: center;
     margin-top: 45%;
-    text-shadow: -1px -1px #db2763, 1px -1px #db2763, -1px 1px #db2763, 1px 1px #db2763;
+    text-shadow: -1px -1px #b0db43, 1px -1px #b0db43, -1px 1px #b0db43, 1px 1px #b0db43;
 }
 
 #mainMenuComment {
@@ -143,19 +149,19 @@ p{
 }
 
 #mainMenuGridItem1 {
-    background-image: url("https://images.unsplash.com/photo-1554456854-55a089fd4cb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-image: url("../images/game1.png");
 }
 
 #mainMenuGridItem2 {
-    background-image: url("https://images.unsplash.com/photo-1525253086316-d0c936c814f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-image: url("../images/game2.png");
 }
 
 #mainMenuGridItem3 {
-    background-image: url("https://images.unsplash.com/photo-1509559320938-387dfd4e966b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-image: url("../images/game3.png");
 }
 
 #mainMenuGridItem4 {
-    background-image: url("https://images.unsplash.com/photo-1443806798002-651c462956ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+    background-image: url("../images/game4.png");
 }
 
 /* Game page templete */
@@ -231,9 +237,9 @@ p{
 #g1Output {
     color: #b9e3c6;
     padding: 10%;
-    margin-top: 20%;
+    margin-top: 0%;
     letter-spacing: 1.05px;
-    font-size: 1.2em;
+    font-size: 1.5rem;
     line-height: 1.5em;
 }
 
@@ -299,9 +305,17 @@ color: red;
     margin:20px;
 }
 .g3_output{
+    margin: 0 auto;
     text-align: center;
-    font-size:4rem;
-}
+    font-size:2rem;
+    color:#b9e3c6;
+    padding-top:30px;
+    width:500px;
+    height:100px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/28/16/45/blackboard-614979_960_720.jpg");
+    background-size: 100% 100%;
+    }
+
 .g3_caltype{
     line-height:10px;
 }
@@ -352,10 +366,60 @@ color: red;
 /* ----------------------------------------*
 *    game 4 -- Chris & Vlad                *
 *------------------------------------------*/
-
-
-
-
+#gameTitle {
+    text-align: center;
+}
+#g4_inframe{
+    width:50%;
+    margin-left: 33%;
+    display: inline-flex;
+}
+#g4_fin,#g4_sin,#g4_tin{
+    width:100px;
+    height:30px;
+    font-size: 20px;
+    margin:10px;
+}
+#g4_button{
+    width:100px;
+    height:35px;
+    font-size:20px;
+    border-radius: 10%;
+    margin:10px;
+    background-color:darkcyan;
+    color:white;
+}
+#g4_button:hover{
+    width:100px;
+    height:35px;
+    font-size:20px;
+    border-radius: 10%;
+    margin:10px;
+    transform: scale(1.2,1.2);
+    background-color:rgb(16, 58, 54);
+    color:rgb(197, 121, 121);
+}
+#g4_fin:hover{
+    background-color:rgb(66, 91, 165);
+    color:rgb(233, 206, 170);
+}
+#g4_sin:hover{
+    background-color:thistle;
+    color:rgb(195, 236, 236);
+}
+#g4_tin:hover{
+    background-color:rgb(235, 224, 210);
+    color:whitesmoke;
+}
+.g4Output{
+    text-align: center;
+    width:500px;
+    height:100px;
+    margin:100px auto;
+    padding:100px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/28/16/45/blackboard-614979_960_720.jpg");
+    background-size: 100% 100%;
+    }
 /* ----------------------------------------*
 *    game 4 -- Chris & Vlad                *
 *------------------------------------------*/

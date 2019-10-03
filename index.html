@@ -86,7 +86,7 @@
             <div id="game3Content" class="hiddenElement">
                 <h2 id="gameTitle">Game 3: Calculator</h2>
                 <section class="g3">
-                    <p>Enter two numbers and select the calculation type. Put your answer and check your answer!<br>*max 3 digits 0-999</p>
+                    <p>Enter two numbers and select the calculation type. Put your answer and check it!<br>*max 3 digits 0-999</p>
                     <div class="g3_container">
                     <div class="g3_items">
                         <input class="g3_input" id="number1" type="number" placeholder="1st number" min="0" max="999"/>
@@ -109,14 +109,24 @@
                     <button class="g3_button" onclick='calculate()'>CHECK ANSWER</button>
                 </section>
                 <section class="g3_output">
-                    <span id="resultContainer"></span>
+                    <span id="resultContainer"></span><br>
                     <span id="resultContainer1"></span>
                 </section>
             </div>
 
             <div id="game4Content" class="hiddenElement">
-                <h2 id="gameTitle">Game 4: Lottery Program</h2>
-
+                <h2 id="gameTitle">Game 4: Lottery Program
+                <p>Please fill in three different number and click "check" to get result, range:1~10</p></h2>
+                <div id="g4_inframe">
+                    <input type="number" id="g4_fin" placeholder="1st number" min="1" max="10" required>
+                    <input type="number" id="g4_sin" placeholder="2nd number" min="1" max="10" required>
+                    <input type="number" id="g4_tin" placeholder="3rd number" min="1" max="10" required>
+                    <button type="button" onclick="result()" id="g4_button">Check</button>
+                </div>
+                <div class="g4Output">
+                <h1 id="g4_output"></h1>
+                <h1 id="g4_output1"></h1>
+                </div>
                 <!-- TODO: Game 4's HTML body Code, except output -->
 
             </div>      
@@ -127,6 +137,6 @@
     <script type="text/javascript" src="assets/js/game1.js"></script>
     <script type="text/javascript" src="assets/js/game2.js"></script>
     <script type="text/javascript" src="assets/js/game3.js"></script>
-
+    <script type="text/javascript" src="assets/js/game4.js"></script>
 </body>
 </html>
