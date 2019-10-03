@@ -11,8 +11,6 @@
 
     <!-- Customize Stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/game.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/game1.css">
 </head>
 <body>
     <nav class="mainNavBar">
@@ -35,7 +33,7 @@
                     <span>Game 3: Calculator</span>
                 </button>
                 <button id="mainMenuGridItem4" class="mainMenuGridItem" onclick="visibleGame()">
-                    <span>Game 4: Lottery Program</san>
+                    <span>Game 4: Lottery Program</span>
                 </button>
         </section>
             </div>
@@ -61,7 +59,7 @@
                     </div>
 
                     <div id="gameOutput" class="gameGridItem">
-                        <div id="output"></div>
+                        <div id="g1Output"></div>
                         <!-- Output -->
                     </div>
                     
@@ -71,7 +69,14 @@
             <div id="game2Content" class="hiddenElement">
                 <h2 id="gameTitle">Game 2: Prime Numbers</h2>
 
-                <!-- TODO: Game 2's HTML body Code, except output -->
+                <!--<script type="text/javascript" src="game2.js"></script>-->
+                <section class="g2">
+                <h3>Enter a Number from (1 to 100):</h3>
+                <input type="number" id="num1" placeholder="Enter Number"></br>
+                <button id="button" onclick="myFunction()">Click ME :D</button></br>
+                <div id="g2Output"><p>Your Answer </p></div> 
+               </section>
+                <!--END-->
 
             </div>
 

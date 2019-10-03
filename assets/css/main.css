@@ -165,17 +165,12 @@ p{
     grid-template-columns: 10% 50% 40%;
     padding: 0;
     margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .gameGridItem {
     height: 300px;
-}
-
-#output {
-    color: #b9e3c6;
-    padding: 10%;
-    margin-top: 20%;
-    letter-spacing: 1.05px;
 }
 
 #gameOutput {
@@ -233,9 +228,12 @@ p{
     padding: 20px;
 }
 
-#output {
+#g1Output {
+    color: #b9e3c6;
+    padding: 10%;
+    margin-top: 20%;
+    letter-spacing: 1.05px;
     font-size: 1.2em;
-    margin-top: 30%;
     line-height: 1.5em;
 }
 
