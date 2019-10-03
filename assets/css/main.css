@@ -341,10 +341,60 @@ p{
 /* ----------------------------------------*
 *    game 4 -- Chris & Vlad                *
 *------------------------------------------*/
-
-
-
-
+#gameTitle {
+    text-align: center;
+}
+#g4_inframe{
+    width:50%;
+    margin-left: 33%;
+    display: inline-flex;
+}
+#g4_fin,#g4_sin,#g4_tin{
+    width:100px;
+    height:30px;
+    font-size: 20px;
+    margin:10px;
+}
+#g4_button{
+    width:100px;
+    height:35px;
+    font-size:20px;
+    border-radius: 10%;
+    margin:10px;
+    background-color:darkcyan;
+    color:white;
+}
+#g4_button:hover{
+    width:100px;
+    height:35px;
+    font-size:20px;
+    border-radius: 10%;
+    margin:10px;
+    transform: scale(1.2,1.2);
+    background-color:rgb(16, 58, 54);
+    color:rgb(197, 121, 121);
+}
+#g4_fin:hover{
+    background-color:rgb(66, 91, 165);
+    color:rgb(233, 206, 170);
+}
+#g4_sin:hover{
+    background-color:thistle;
+    color:rgb(195, 236, 236);
+}
+#g4_tin:hover{
+    background-color:rgb(235, 224, 210);
+    color:whitesmoke;
+}
+.g4Output{
+    text-align: center;
+    width:500px;
+    height:100px;
+    margin:100px auto;
+    padding:100px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/28/16/45/blackboard-614979_960_720.jpg");
+    background-size: 100% 100%;
+    }
 /* ----------------------------------------*
 *    game 4 -- Chris & Vlad                *
 *------------------------------------------*/
