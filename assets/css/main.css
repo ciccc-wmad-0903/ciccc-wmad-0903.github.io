@@ -245,7 +245,26 @@ p{
 /* ----------------------------------------*
 *    game 2 -- Igor                     *
 *------------------------------------------*/
-
+#divBox{
+    
+    border: 1px solid black;
+    /* background-color: aqua; */
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    position: relative;
+}
+#num1{
+    padding: 10px;
+    width: 80%;
+    font-size: 150%;
+}
+#button{
+background-color: #0050FF;
+padding: 10px;
+border-radius: 30%;
+color: red;
+}
 
 
 
