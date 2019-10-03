@@ -28,12 +28,12 @@ function calculate() {
 // correct” or “You are wrong, work harder”.
 
      if (answer == result){
-     document.getElementById("resultContainer").innerHTML =result;
-     document.getElementById("resultContainer").innerHTML ="You are correct.";
+     document.getElementById("resultContainer").innerHTML ="The answer is " + result;
+     document.getElementById("resultContainer1").innerHTML ="You are correct.";
      }
      else{
-    document.getElementById("resultContainer").innerHTML =result;
-    document.getElementById("resultContainer").innerHTML ="You are wrong... work harder.";
+   document.getElementById("resultContainer").innerHTML ="The answer is " + result;
+    document.getElementById("resultContainer1").innerHTML ="You are wrong... work harder.";
 
      }
     }
