@@ -282,9 +282,17 @@ p{
     margin:20px;
 }
 .g3_output{
+    margin: 0 auto;
     text-align: center;
-    font-size:4rem;
-}
+    font-size:2rem;
+    color:#b9e3c6;
+    padding-top:30px;
+    width:500px;
+    height:100px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/28/16/45/blackboard-614979_960_720.jpg");
+    background-size: 100% 100%;
+    }
+
 .g3_caltype{
     line-height:10px;
 }
