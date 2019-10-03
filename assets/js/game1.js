@@ -3,7 +3,7 @@ function g1InputUserName() {
     var lastName = document.getElementById("g1LastName").value;
 
     if (firstName == "") {
-        document.getElementById("output").innerText = "Input your name, Please :)";
+        document.getElementById("g1Output").innerText = "Input your name, Please :)";
         return;    
     }
 
