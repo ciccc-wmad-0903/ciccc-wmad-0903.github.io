@@ -257,8 +257,11 @@ p{
     /* background-color: aqua; */
     text-align: center;
     width: 600px;
-    height: 300px;
-    position: relative;
+    height: 400px;
+    position: absolute;
+    left: 460px;
+    top: 200px;
+    z-index: 300px;
 }
 #num1{
     padding: 10px;
@@ -272,7 +275,17 @@ border-radius: 30%;
 color: red;
 }
 
-
+#g2Output {
+    margin: 0 auto;
+    text-align: center;
+    font-size:2rem;
+    color:#b9e3c6;
+    padding-top:30px;
+    width:600px;
+    height:150px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/28/16/45/blackboard-614979_960_720.jpg");
+    background-size: 100% 100%;
+}
 
 /* ----------------------------------------*
 *    game 2 -- Igor                     *
