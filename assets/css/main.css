@@ -65,6 +65,7 @@ p{
     margin:0 auto;
     height:650px;
     width:100%;
+    background-size: cover;
 }
 
 .hiddenElement {
@@ -89,7 +90,7 @@ p{
     display: grid;
     grid-template-columns: 40% 40%;
     padding: 0 100px;
-    margin-left: 10%;
+    margin-left: 13%;
     margin-top: 30px;
 }
 
@@ -232,9 +233,9 @@ p{
 #g1Output {
     color: #b9e3c6;
     padding: 10%;
-    margin-top: 20%;
+    margin-top: 0%;
     letter-spacing: 1.05px;
-    font-size: 1.2em;
+    font-size: 1.5rem;
     line-height: 1.5em;
 }
 
