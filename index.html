@@ -23,16 +23,16 @@
         <section class="main_background" style="background-image: url('assets/images/background1.png');background-repeat:no-repeat;">
             <h1 id="mainMenuComment">Select a Game and Play!</h1>
             <div class="mainMenuGridContainer">
-                <button id="mainMenuGridItem1" class="mainMenuGridItem" onclick="visibleGame()">
+                <button id="mainMenuGridItem1" class="mainMenuGridItem" onclick="visibleGame(this)">
                     <span>Game 1: Who are you?</span>
                 </button>
-                <button id="mainMenuGridItem2" class="mainMenuGridItem" onclick="visibleGame()">
+                <button id="mainMenuGridItem2" class="mainMenuGridItem" onclick="visibleGame(this)">
                     <span>Game 2: Prime Numbers</span>
                 </button>
-                <button id="mainMenuGridItem3" class="mainMenuGridItem" onclick="visibleGame()">
+                <button id="mainMenuGridItem3" class="mainMenuGridItem" onclick="visibleGame(this)">
                     <span>Game 3: Calculator</span>
                 </button>
-                <button id="mainMenuGridItem4" class="mainMenuGridItem" onclick="visibleGame()">
+                <button id="mainMenuGridItem4" class="mainMenuGridItem" onclick="visibleGame(this)">
                     <span>Game 4: Lottery Program</span>
                 </button>
         </section>
@@ -41,10 +41,9 @@
 
         <div id="eachGameContent" class="hiddenElement">
             <div id="game1Content" class="hiddenElement">
+                <!-- TODO: Game 1's HTML body Code, except output -->
                 <div class="gameGridContainer">
-                    <div id="gameLeftImage" class="gameGridItem">
-                        <!-- TODO: Choose Left side image in CSS (now, temporal image) -->
-                    </div>
+                    <div id="gameLeftImage" class="gameGridItem"></div>
 
                     <div class="gameGridItem">
                         <h2 id="gameTitle">Game 1: Who are you?</h2>
@@ -75,7 +74,7 @@
                 <section class="g2">
                 <h3>Enter a Number</h3>
                 <input type="number" id="num1" placeholder="Enter Number ..."></br>
-                <button id="button" onclick="myFunction()">Play :D</button></br>
+                <button id="buttongame2" onclick="myFunction()">Play :D</button></br>
                 <div id="g2Output"><p>Your Answer </p></div> 
                </section>
 
