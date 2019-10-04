@@ -18,7 +18,7 @@ function myFunction(){
         if (isPrime == 0) {
             document.getElementById("g2Output").innerText = " Your Number is Prime!";
         }
-        else if (num1 <= 0 || num1 >=101){
+        else if (num1 <= 1){
             document.getElementById("g2Output").innerHTML = "Your Number is incorrect, please try again";
         } 
         else {
