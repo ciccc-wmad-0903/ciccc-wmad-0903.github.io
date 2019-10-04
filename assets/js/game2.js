@@ -10,7 +10,7 @@ function myFunction(){
         var isPrime = 0;
         for (var i = 2; i<num1; i++)
         {
-            if (num1 % 2 == 0){
+            if (num1 % i == 0) {
                 isPrime = 1;
                 break;
             }

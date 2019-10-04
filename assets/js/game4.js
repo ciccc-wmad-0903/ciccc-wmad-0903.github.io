@@ -14,6 +14,7 @@ function result(){
     if(d == e || d == f || e == f){
         document.getElementById("g4_output").innerHTML
             ='<span style="color: red;">Please put three different number</span>';
+        document.getElementById("g4_output1").innerHTML = "";
         return;
     }
     var inputArray = [d,e,f];
